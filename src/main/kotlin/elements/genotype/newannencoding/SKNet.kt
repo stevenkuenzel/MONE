@@ -281,13 +281,12 @@ class SKNet(id: Int, val numInput: Int, val numOutput: Int) : Genotype<SKNet>(id
             } else {
                 val value = (if (rcg.value1 != null && inequalMode != InequalGeneMode.Parent2) {
                     rcg.value1
-                } else if (rcg.value2 != null && inequalMode != InequalGeneMode.Parent1){
+                } else if (rcg.value2 != null && inequalMode != InequalGeneMode.Parent1) {
                     rcg.value2
+                } else {
+                    // This case should never happen.
+                    continue
                 })!!
-                else
-                {
-
-                }
 
                 offspringGenes.add(SKLink(rcg.link.from, rcg.link.to, value))
             }

@@ -23,7 +23,7 @@
 hs_err_pid*
 /build/
 .gradle
-.idea
+#.idea
 gradle
 
 output
