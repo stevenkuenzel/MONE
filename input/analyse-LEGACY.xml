@@ -1,0 +1,357 @@
+<Evaluations>
+	<!-- CHAPTER 5 -->
+	
+	<Evaluation>
+		<Settings>
+			<Setting Name = "NAME_LONG" Value = "q-Procedure Variants - DPB with velocities"/>
+			<Setting Name = "NAME_SHORT" Value = "qPV-DPBwV"/>
+
+			<Setting Name = "STANDALONE" Value = "false"/>
+			<Setting Name = "IDENTIFIER" Value = "POPULATION_SIZE"/>
+			<Setting Name = "LEGEND_NAME_PATTERN" Value = "[QUALITY_MEASURE]"/>
+			<Setting Name = "DIAGRAM_SAMPLES" Value = "25"/>
+			
+			<Setting Name = "NETWORK_SIZE_ONLY_ADDED" Value = "false"/>
+			<!--
+			OUTPUT: SR, ATS, RTB, MBF, Div1, Div2, NetworkSize, Bloat, NetworkSizeTab
+			-->
+			<Setting Name = "OUTPUT" Value = "111111100"/>
+		</Settings>
+		<Conditions>
+			<Exclusive>
+				<Condition Name="EXPERIMENT" Value="DPB"/>
+				<Condition Name="DPB_MARKOVIAN" Value="true"/>
+			</Exclusive>
+			<Inclusive>
+				<Configuration>
+					<EARPC Value="3"/>
+				</Configuration>
+				<Algorithm>
+					<nNEAT Value="1"/>
+				</Algorithm>
+				<QualityMeasure>
+					<NDR_R2 Value="1"/>
+					<R2 Value="3"/>
+					<R2it Value="4"/>
+					<QD Value="6"/>
+				</QualityMeasure>
+			</Inclusive>
+		</Conditions>
+	</Evaluation>
+	
+	<Evaluation>
+		<Settings>
+			<Setting Name = "NAME_LONG" Value = "q-Procedure Variants - DPB without velocities"/>
+			<Setting Name = "NAME_SHORT" Value = "qPV-DPBnV"/>
+
+			<Setting Name = "STANDALONE" Value = "false"/>
+			<Setting Name = "IDENTIFIER" Value = "POPULATION_SIZE"/>
+			<Setting Name = "LEGEND_NAME_PATTERN" Value = "[QUALITY_MEASURE]"/>
+			<Setting Name = "DIAGRAM_SAMPLES" Value = "25"/>
+			
+			<Setting Name = "NETWORK_SIZE_ONLY_ADDED" Value = "false"/>
+			<!--
+			OUTPUT: SR, ATS, RTB, MBF, Div1, Div2, NetworkSize, Bloat, NetworkSizeTab
+			-->
+			<Setting Name = "OUTPUT" Value = "001111100"/>
+		</Settings>
+		<Conditions>
+			<Exclusive>
+				<Condition Name="EXPERIMENT" Value="DPB"/>
+				<Condition Name="DPB_MARKOVIAN" Value="false"/>
+			</Exclusive>
+			<Inclusive>
+				<Configuration>
+					<EARPC Value="3"/>
+				</Configuration>
+				<Algorithm>
+					<nNEAT Value="1"/>
+				</Algorithm>
+				<QualityMeasure>
+					<NDR_R2 Value="1"/>
+					<R2 Value="3"/>
+					<R2it Value="4"/>
+					<QD Value="6"/>
+				</QualityMeasure>
+			</Inclusive>
+		</Conditions>
+	</Evaluation>
+	
+	
+	<!-- CHAPTER 6 -->
+	
+	<Evaluation>
+		<Settings>
+			<Setting Name = "NAME_LONG" Value = "Parameter Control - DPB without velocities"/>
+			<Setting Name = "NAME_SHORT" Value = "PC-DPBnV"/>
+
+			<Setting Name = "STANDALONE" Value = "false"/>
+			<Setting Name = "IDENTIFIER" Value = "POPULATION_SIZE"/>
+			<Setting Name = "LEGEND_NAME_PATTERN" Value = "[CONFIGURATION]"/>
+			<Setting Name = "DIAGRAM_SAMPLES" Value = "25"/>
+			
+			<Setting Name = "NETWORK_SIZE_ONLY_ADDED" Value = "false"/>
+			<!--
+			OUTPUT: SR, ATS, RTB, MBF, Div1, Div2, NetworkSize, Bloat, NetworkSizeTab
+			-->
+			<Setting Name = "OUTPUT" Value = "001111101"/>
+		</Settings>
+		<Conditions>
+			<Exclusive>
+				<Condition Name="EXPERIMENT" Value="DPB"/>
+				<Condition Name="DPB_MARKOVIAN" Value="false"/>
+			</Exclusive>
+			<Inclusive>
+				<Configuration>
+					<Default Value="0"/>
+					<Random Value="1"/>
+					<EARPC Value="3"/>
+					<DDYPC Value="4"/>
+				</Configuration>
+				<Algorithm>
+					<nNEAT Value="1"/>
+				</Algorithm>
+				<QualityMeasure>
+					<QD Value="6"/>
+				</QualityMeasure>
+			</Inclusive>
+		</Conditions>
+	</Evaluation>
+	
+	<Evaluation>
+		<Settings>
+			<Setting Name = "NAME_LONG" Value = "Parameter Control - DPB with velocities"/>
+			<Setting Name = "NAME_SHORT" Value = "PC-DPBwV"/>
+
+			<Setting Name = "STANDALONE" Value = "false"/>
+			<Setting Name = "IDENTIFIER" Value = "POPULATION_SIZE"/>
+			<Setting Name = "LEGEND_NAME_PATTERN" Value = "[CONFIGURATION]"/>
+			<Setting Name = "DIAGRAM_SAMPLES" Value = "25"/>
+			
+			<Setting Name = "NETWORK_SIZE_ONLY_ADDED" Value = "false"/>
+			<!--
+			OUTPUT: SR, ATS, RTB, MBF, Div1, Div2, NetworkSize, Bloat, NetworkSizeTab
+			-->
+			<Setting Name = "OUTPUT" Value = "111111100"/>
+		</Settings>
+		<Conditions>
+			<Exclusive>
+				<Condition Name="EXPERIMENT" Value="DPB"/>
+				<Condition Name="DPB_MARKOVIAN" Value="true"/>
+			</Exclusive>
+			<Inclusive>
+				<Configuration>
+					<Default Value="0"/>
+					<Random Value="1"/>
+					<EARPC Value="3"/>
+					<DDYPC Value="4"/>
+				</Configuration>
+				<Algorithm>
+					<nNEAT Value="1"/>
+				</Algorithm>
+				<QualityMeasure>
+					<QD Value="6"/>
+				</QualityMeasure>
+			</Inclusive>
+		</Conditions>
+	</Evaluation>
+	
+	
+	<!-- CHAPTER 7 -->
+	<Evaluation>
+		<Settings>
+			<Setting Name = "NAME_LONG" Value = "External Comparison - DPB without velocities"/>
+			<Setting Name = "NAME_SHORT" Value = "ExtCmp-DPBnV"/>
+
+			<Setting Name = "STANDALONE" Value = "false"/>
+			<Setting Name = "IDENTIFIER" Value = "POPULATION_SIZE"/>
+			<Setting Name = "LEGEND_NAME_PATTERN" Value = "[ALGORITHM]"/>
+			<Setting Name = "DIAGRAM_SAMPLES" Value = "25"/>
+			
+			<Setting Name = "NETWORK_SIZE_ONLY_ADDED" Value = "false"/>
+			<!--
+			OUTPUT: SR, ATS, RTB, MBF, Div1, Div2, NetworkSize, Bloat, NetworkSizeTab
+			-->
+			<Setting Name = "OUTPUT" Value = "001111101"/>
+		</Settings>
+		<Conditions>
+			<Exclusive>
+				<Condition Name="EXPERIMENT" Value="DPB"/>
+				<Condition Name="DPB_MARKOVIAN" Value="false"/>
+			</Exclusive>
+			<Inclusive>
+				<Configuration>
+					<!--<DEFAULT Value="0"/>-->
+					<EARPC Value="3"/>
+				</Configuration>
+				<Algorithm>
+					<nNEAT Value="1"/>
+					<NEATPS Value="2"/>
+					<NEATMODS Value="3"/>
+				</Algorithm>
+				<QualityMeasure>
+					<Default Value="0"/>
+					<QD Value="6"/>
+				</QualityMeasure>
+			</Inclusive>
+		</Conditions>
+	</Evaluation>
+	
+	<Evaluation>
+		<Settings>
+			<Setting Name = "NAME_LONG" Value = "External Comparison - DPB with velocities"/>
+			<Setting Name = "NAME_SHORT" Value = "ExtCmp-DPBwV"/>
+
+			<Setting Name = "STANDALONE" Value = "false"/>
+			<Setting Name = "IDENTIFIER" Value = "POPULATION_SIZE"/>
+			<Setting Name = "LEGEND_NAME_PATTERN" Value = "[ALGORITHM]"/>
+			<Setting Name = "DIAGRAM_SAMPLES" Value = "25"/>
+			
+			<Setting Name = "NETWORK_SIZE_ONLY_ADDED" Value = "false"/>
+			<!--
+			OUTPUT: SR, ATS, RTB, MBF, Div1, Div2, NetworkSize, Bloat, NetworkSizeTab
+			-->
+			<Setting Name = "OUTPUT" Value = "111111101"/>
+		</Settings>
+		<Conditions>
+			<Exclusive>
+				<Condition Name="EXPERIMENT" Value="DPB"/>
+				<Condition Name="DPB_MARKOVIAN" Value="true"/>
+			</Exclusive>
+			<Inclusive>
+				<Configuration>
+					<!--<DEFAULT Value="0"/>-->
+					<EARPC Value="3"/>
+				</Configuration>
+				<Algorithm>
+					<nNEAT Value="1"/>
+					<NEATPS Value="2"/>
+					<NEATMODS Value="3"/>
+				</Algorithm>
+				<QualityMeasure>
+					<Default Value="0"/>
+					<QD Value="6"/>
+				</QualityMeasure>
+			</Inclusive>
+		</Conditions>
+	</Evaluation>
+	
+	
+	<!-- CHAPTER 8 -->
+	
+	<Evaluation>
+		<Settings>
+			<Setting Name = "NAME_LONG" Value = "FightingICE -- \tt{ANNBot} 1/2"/>
+			<Setting Name = "NAME_SHORT" Value = "FightingICE"/>
+
+			<Setting Name = "STANDALONE" Value = "false"/>
+			<Setting Name = "IDENTIFIER" Value = "POPULATION_SIZE"/>
+			<Setting Name = "LEGEND_NAME_PATTERN" Value = "[FURTHER]"/>
+			<Setting Name = "LEGEND_LATEX_COMMAND" Value = "\tt"/>
+			<Setting Name = "DIAGRAM_SAMPLES" Value = "25"/>
+			<Setting Name = "STANDARD_DEVIATION" Value = "true"/>
+			
+			<Setting Name = "NETWORK_SIZE_ONLY_ADDED" Value = "true"/>
+			<!--
+			OUTPUT: SR, ATS, RTB, MBF, Div1, Div2, NetworkSize, Bloat, NetworkSizeTab
+			-->
+			<Setting Name = "OUTPUT" Value = "111111100"/>
+		</Settings>
+		<Conditions>
+			<Exclusive>
+				<Condition Name="EXPERIMENT" Value="FTG"/>
+			</Exclusive>
+			<Inclusive>
+				<Configuration>
+					<!--<Default Value="0"/>-->
+					<EARPC Value="3"/>
+				</Configuration>
+				<Algorithm>
+					<nNEAT Value="1"/>
+				</Algorithm>
+				<QualityMeasure>
+					<!--<NDR_R2 Value="1"/>-->
+					<QD Value="6"/>
+				</QualityMeasure>
+				<Further>
+					<ANNBot1 Value="ANNBot1"/>
+					<ANNBot2 Value="ANNBot2"/>
+				</Further>
+			</Inclusive>
+		</Conditions>
+	</Evaluation>
+	
+	
+	<!-- CHAPTER 9 -->
+	<Evaluation>
+		<Settings>
+			<Setting Name = "NAME_LONG" Value = "simTORCS -- \tt{ANNRacer}"/>
+			<Setting Name = "NAME_SHORT" Value = "TORCS"/>
+
+			<Setting Name = "STANDALONE" Value = "false"/>
+			<Setting Name = "IDENTIFIER" Value = "POPULATION_SIZE"/>
+			<Setting Name = "LEGEND_NAME_PATTERN" Value = "[ALGORITHM]"/>
+			<Setting Name = "DIAGRAM_SAMPLES" Value = "25"/>
+			<Setting Name = "STANDARD_DEVIATION" Value = "true"/>
+			
+			<Setting Name = "NETWORK_SIZE_ONLY_ADDED" Value = "true"/>
+			<!--
+			OUTPUT: SR, ATS, RTB, MBF, Div1, Div2, NetworkSize, Bloat, NetworkSizeTab
+			-->
+			<Setting Name = "OUTPUT" Value = "001011100"/>
+		</Settings>
+		<Conditions>
+			<Exclusive>
+				<Condition Name="EXPERIMENT" Value="TORCS"/>
+			</Exclusive>
+			<Inclusive>
+				<Configuration>
+					<EARPC Value="3"/>
+				</Configuration>
+				<Algorithm>
+					<nNEAT Value="1"/>
+				</Algorithm>
+				<QualityMeasure>
+					<NDR_R2 Value="1"/>
+					<QD Value="6"/>
+				</QualityMeasure>
+			</Inclusive>
+		</Conditions>
+	</Evaluation>
+	
+		<!-- CHAPTER X -->
+	<Evaluation>
+		<Settings>
+			<Setting Name = "NAME_LONG" Value = "OpenWater"/>
+			<Setting Name = "NAME_SHORT" Value = "OW"/>
+
+			<Setting Name = "STANDALONE" Value = "true"/>
+			<Setting Name = "IDENTIFIER" Value = "POPULATION_SIZE"/>
+			<Setting Name = "LEGEND_NAME_PATTERN" Value = "[ALGORITHM][COUNTER]"/>
+			<Setting Name = "DIAGRAM_SAMPLES" Value = "30"/>
+			
+			<Setting Name = "NETWORK_SIZE_ONLY_ADDED" Value = "true"/>
+			<!--
+			OUTPUT: SR, ATS, RTB, MBF, Div1, Div2, NetworkSize, Bloat, NetworkSizeTab
+			-->
+			<Setting Name = "OUTPUT" Value = "111111111"/>
+		</Settings>
+		<Conditions>
+			<Exclusive>
+				<Condition Name="EXPERIMENT" Value="OW"/>
+			</Exclusive>
+			<Inclusive>
+				<Configuration>
+					<EARPC Value="3"/>
+				</Configuration>
+				<Algorithm>
+					<nNEAT Value="1"/>
+				</Algorithm>
+				<QualityMeasure>
+					<NDR_R2 Value="1"/>
+					<QD Value="6"/>
+				</QualityMeasure>
+			</Inclusive>
+		</Conditions>
+	</Evaluation>
+</Evaluations>
