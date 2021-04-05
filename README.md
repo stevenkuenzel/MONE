@@ -1,5 +1,7 @@
 # Final Kotlin Implementation
 
+(Note: This ReadMe file aims at guiding owners of the CD attached to my thesis. However, it also introduces the most important information of the project without the CD available.)
+
 This project represents the resulting implementation of my dissertation. It allows applying nNEAT on all the described scenarios, including the case studies.
 
 Note that the experiments within the thesis were conducted and analysed with the experimental implementation in the project `MONE_KOTLIN`, you can find it on the CD: `Source Code/Experimental Kotlin Implementation`.
@@ -26,4 +28,4 @@ These changes may result in performance differences between the experiments desc
 * Evaluate: Evaluate a single solution (neural network) in a certain scenario. The scenario is defined in `input/config.json`, entry `Experiment`. The network to evaluate has to be stored in the file `input/ANN.xml`.
 
 ### Online Sources
-The most up-to-date version of this project can be found on GitHub: https://github.com/stevenkuenzel/Dissertation
+The most up-to-date version of this project can be found on GitHub: https://github.com/stevenkuenzel/MONE
