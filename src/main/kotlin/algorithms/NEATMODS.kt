@@ -1,8 +1,10 @@
 package algorithms
 
 import controlparameters.Parameter
+import difference.decisionspace.NetworkDifference
 import elements.genotype.neuralnetworks.NetworkGenotype
 import elements.speciation.Species
+import elements.speciation.StanleySpeciator
 import experiments.Experiment
 import org.apache.commons.math3.util.FastMath
 import sorting.impl.CrowdingDistance
@@ -19,6 +21,10 @@ import sorting.impl.NondominatedRanking
  * @param experiment The experiment instance.
  */
 class NEATMODS(experiment: Experiment) : NEAT(experiment, NondominatedRanking(CrowdingDistance())) {
+
+    init {
+        speciator = StanleySpeciator(this, NetworkDifference(this), random)
+    }
 
     override fun epoch_() {
         updateExportSet()

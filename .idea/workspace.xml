@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8124ec93-e4b3-4133-8aa9-1a164753c2c3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/elements/genotype/newannencoding/SKNet.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/elements/genotype/newannencoding/SKNet.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/algorithms/NEATMODS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/algorithms/NEATMODS.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.Run">
+  <component name="RunManager" selected="Gradle.MONE [build]">
     <configuration name="MONE [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -142,6 +141,7 @@
       <updated>1617619301238</updated>
       <workItem from="1617619302477" duration="570000" />
       <workItem from="1617619968534" duration="180000" />
+      <workItem from="1618942645621" duration="128000" />
     </task>
     <servers />
   </component>
